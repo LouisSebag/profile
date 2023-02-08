@@ -1,0 +1,144 @@
+body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  color: darkgray;
+}
+
+.pp {
+  border-radius: 300px;
+  width: 100px;
+  color: darkgray;
+  margin-bottom: 20px;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+h1 {
+  color: gray;
+  font-weight: 900;
+}
+
+h2 {
+  color: gray;
+}
+
+.card {
+  background-color: #fafafa;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 40vw;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80vw;
+  }
+}
+
+.inner-card {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-first {
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  border-color: #fafafa;
+  padding: 10px 40px;
+  font-family: 'Poppins', sans-serif;
+  border: 0;
+  -webkit-transition: 500ms;
+}
+
+.cta-first:hover {
+  transform: scale(1.05);
+  transition-duration: 300ms;
+}
+
+/*column */
+
+.row {
+  display: flex;
+  margin: 0 auto;
+}
+
+.column {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img-skills {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .img-skills {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+
+
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
